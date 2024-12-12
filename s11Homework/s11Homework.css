@@ -1,0 +1,44 @@
+body {
+    background-color: greenyellow;
+    background-size: cover;
+}
+
+.hh0 {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pp0 {
+    font-style: italic;
+    color: blue;
+}
+
+.pp1 {
+    color: brown;
+    front-famil
+}
+
+img {
+    float: right;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 10px;
+
+}
+
+.hh1 {
+    color: green;
+
+}
+
+ul {
+    ;
+    background-image: url(https://plus.unsplash.com/premium_photo-1732730224306-3b469ea9e640?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: contain;
+    opacity: 0.6;
+
+}
+
+li {
+    color: honeydew;
+}
