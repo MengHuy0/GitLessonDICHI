@@ -1,0 +1,85 @@
+.khmer-regular {
+    font-family: "Khmer", serif;
+    font-weight: 400px;
+    font-style: normal;
+    margin: 00px;
+   font-size: 30px;
+    position: relative;
+    color:#a23434;
+    box-shadow: #6f0202;
+    align-items: center;
+    align-content: center;
+   
+  }
+
+body{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(74, 65, 116);
+background-size: cover;
+}
+
+.wrapper{
+  height: 120px;
+  min-width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6f0202;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 2)
+}
+.wrapper span{
+  width: 100%;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+}
+.wrapper span.num{
+font-size: 50px;
+  border-right: 2px solid rgba(0, 0, 0, 2);
+  border-left: 2px solid rgba(0, 0, 0, 2);
+  }
+  button{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    border-radius: 65px;
+    background: #6d0a0a;
+  }
+  ul{
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 2px;
+    display: flex;
+    background-image: url(https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  }
+  ul li{
+    display: block;
+    margin: 100px;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    font-family: "Khmer", serif;
+    font-weight: 600px;
+    font-style: normal;
+    border-right: 2px solid rgba(3, 3, 3, 5);
+    border-left: 2px solid rgba(3, 3, 3, 5);
+    font-size: 10px;
+    color: white;
+  }
+#para{ 
+  font-family: "Khmer", serif;
+  font-weight: 400px;
+  font-style: normal;
+  margin: 00px;
+ font-size: 30px;
+ border: solid 2px black;
+ display: block;
+ padding: 15px;
+color: rgb(rgb(227, 205, 205), rgb(15, 130, 15), rgb(86, 86, 217))
+}

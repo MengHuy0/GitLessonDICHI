@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addBottonPulseAndMinus</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Khmer&display=swap');
+    </style>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+    <h1 class="khmer-regular">កិច្ចការផ្ទះ</h1>
+    <ul>
+        <li><button class="li" onclick="changeText(1)">ចំនុចទី ១</button> </li>
+        <li><button class="li" onclick="changeText(2)">ចំនុចទី ២</button></li>
+        <li><button class="li" onclick="changeText(3)">ចំនុចទី ៣</button></li>
+        <li><button class="li" onclick="changeText(4)">ចំនុចទី ៤</button></li>
+    </ul>
+    <p id="para" style="color: #f2bcbc;;" >ាសដាសដ</p>
+    <div class="wrapper">
+        <span class="minus">
+            <button>-</button>
+        </span>
+        <span class="num">1</span>
+        <span class="plus">
+            <button>+</button>
+        </span>
+    </div>
+    <script>
+        const plus = document.querySelector(".plus");
+        minus = document.querySelector(".minus");
+        num = document.querySelector(".num");
+        let a = 1
+        plus.addEventListener("click", () => {
+            a++;
+            console.log(a);
+        });
+        minus.addEventListener("click", () => {
+            if (a > 1) { a-- }
+            console.log(a);
+        });
+        let currentFontSize = 16;
+        plus.addEventListener("click", () => {
+            currentFontSize += 2;
+            num.style.fontSize = currentFontSize + "px";
+            num.innerText = a;
+        });
+        minus.addEventListener("click", () => {
+            currentFontSize = Math.max(10, currentFontSize - 2);
+            num.style.fontSize = currentFontSize + "px";
+            num.innerText = a;
+        })
+  
+       function changeText(li){
+        const parag =document.getElementById("para");
+        switch (li){
+            case 1:
+            parag.textContent = 'អ្នកឯកទេសថែរក្សារថយន្ដគ្រប់ប្រភេទបានបង្ហាញវត្តមាននៅក្នុងកម្មវិធី Auto show នៅផ្សារទំនើប Aeon';
+            break;
+            case 2:
+            parag.textContent = 'ស្មាតហ្វូនដែលបំពាក់កាមេរ៉ាល្អដាច់គេ OPPO Find X8 Series ដាក់សម្ពោធហើយនៅប្រទេសកម្ពុជា';
+            break;
+            case 3:
+            parag.textContent = 'GANZBERG ផ្ដល់ កាដូដ៏ធំអស្ចារ្យស្វាគមន៍ឆ្នាំ ថ្មី 2025 ជាមួយព្រឹត្តិការណ៍ ប្រគំតន្ត្រីលំដាប់ពិភពលោក';
+            break;
+            case 4:
+            parag.textContent = 'ស្រ្តីអ្នកបម្រើម្នាក់ទទួលបានលុយប្រមាណ 2,7លានដុល្លារ បន្ទាប់ពីម្ចាស់បានធ្វើអត្ថឃាត តែស្ថិតក្នុងការសង្ស័យ';
+            break;
+            default:
+                parag.textContent = 'ាសដាសដ';
+        
+        }
+       }
+
+
+    </script>
+</body>
+
+</html>
