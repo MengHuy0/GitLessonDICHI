@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>To-Do List</h1>
+        <div class="input-box">
+            <input type="text" id="text" placeholder="Add a new task">
+            <button id="add">add</button>
+        </div>
+        <ol id="textList" type="1">
+
+            </ul>
+    </div>
+
+    <script>
+        const textInput = document.getElementById("text");
+        const btm = document.getElementById("add");
+        const textList = document.getElementById("textList");
+
+
+        function createText(text) {
+            const textItem = document.createElement("li");
+            textItem.innerHTML = `
+    <span>${text}</span>
+    <button class="delete">Delete</button>
+    `;
+            textList.appendChild(textItem);
+            const deletebtm = textItem.querySelector(".delete");
+            deletebtm.addEventListener('click', () => {
+                textItem.remove(text);
+
+
+            });
+
+        }
+
+
+        btm.addEventListener('click', () => {
+            const nText = textInput.value.trim();
+            if (nText !== "");
+            createText(nText);
+            textInput.value = "";
+        })
+
+
+
+    </script>
+</body>
+
+</html>
