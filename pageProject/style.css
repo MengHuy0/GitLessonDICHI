@@ -380,3 +380,32 @@ aboutUS
     text-align: center;
     
 }
+
+.main{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   justify-items: space-evenly;
+}
+.mainbox{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    
+  
+    
+}
+.mainbox .feedback{
+    float: right;
+    width: 45%;
+    border: solid black;
+    
+}
+.mainbox .login{
+    
+    float: right;
+    width: 45%;
+    border: solid black
+}
