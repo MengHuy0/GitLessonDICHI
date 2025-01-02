@@ -434,7 +434,7 @@ form .id i {
     font-size: 20px;
     top: 50%;
     right: 20px;
-    transform: translateY(-50%);
+    transform
 }
 
 form input {
@@ -450,7 +450,6 @@ form textarea{
     border: 1px solid #5c5c5c;
     font-size: 20px;
     width: 70%;
-
 }
 
 form button{
