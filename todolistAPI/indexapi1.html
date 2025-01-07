@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoFetcher</title>
+    <link rel="stylesheet" href="styleapi.css">
+</head>
+
+<body>
+    <div class="contianer">
+    <h1>ToDoFetcher</h1>
+    <input type="text" id="todo" placeholder="Enter your todo">
+    <button onclick="fetchData()">Fetch</button>
+    <div class="fetchData"><p>UserID:
+        <span id="userId"></span>
+    </p>
+    <p>title:
+        <span id="title"></span>
+    </p>
+    <p>state:
+        <span id="completed"></span>
+    </p>
+</div>
+</div>
+    <script>
+
+        function fetchData() {
+            let todo = document.getElementById('todo').value;
+            fetch(`https://jsonplaceholder.typicode.com/todos/${todo}`)
+                .then(response => response.json())
+                .then(json => {
+                    document.getElementById('userId').innerText = json.id;
+                    console.log(json);
+                    document.getElementById('title').innerText = json.title;
+                    document.getElementById('completed').innerText = json.completed;
+                    if (json.completed) {
+                        document.getElementById('completed').innerText = 'Completed';
+                        document.getElementById('completed').style.backgroundColor = 'green';
+                        document.getElementById('title').style.textDecoration = 'underline';
+                    } else {
+                        document.getElementById('completed').innerText = 'Not Completed';
+                        document.getElementById('completed').style.backgroundColor = 'red';
+                        document.getElementById('title').style.textDecoration = 'line-through';
+                    }
+                });
+        };
+        
+
+    </script>
+</body>
+
+</html>

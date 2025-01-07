@@ -1,0 +1,58 @@
+*{
+    width: 100%;
+    margin: 0;
+    padding: auto;
+}
+.contianer{
+    width: 100%;
+    margin: 20px 10px;
+    padding: auto;
+    border: 2px solid green;
+}
+h1{
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[:placeholder-shown]{
+    color: red;
+    align-content: center;
+    align-items: center;
+}
+button{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.fetchData{
+    width: 100%;
+    margin: 20px 10px;
+    padding: auto;
+    border: 2px solid green;
+}
+.fetchData p{
+    font-size: 20px;
+    color: rgba(10, 6, 6, 0.2);
+    text-align: center;
+}
+.fetchData p span{
+    font-size: 15px;
+    color: rgba(10, 6, 6, 0.2);
+    text-align: center;
+    font-weight: bold;
+}
